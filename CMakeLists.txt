@@ -4,6 +4,11 @@
 ####
 
 cmake_minimum_required(VERSION 3.13)
+cmake_policy(SET CMP0048 NEW)
+set(CMAKE_SYSTEM_NAME "Zephyr")
+set(BOARD adafruit_feather_nrf52840)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+
 project(mHSTz C CXX)
 
 ###
