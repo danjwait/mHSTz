@@ -2,3 +2,6 @@
 path = zephyrManifest
 file = west.yml
 
+[zephyr]
+base = zephyr
+
